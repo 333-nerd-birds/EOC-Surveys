@@ -1,5 +1,26 @@
 <html>
-  
-  
-  <h1>Test</h1>
+<head>
+<title>DJ</title>
+</head>
+<body>
+<h1>Example Code for DJ</h1>
+<p>This is an example webpage</p>
+
+<a href="#" onclick="randomUrl();"><img id="img-hover" src="brady.jpg"/></a>
+<script>
+var urlArray = [
+    "https://forms.gle/n21jJycDQC6p9fuD8",
+    "https://forms.gle/b8qZwvFTyq5Tiop96",
+    "https://forms.gle/PfdioEXhuGQew4DV8",
+    "https://forms.gle/R8KdsqkAYvgdbbZKA"
+];
+
+function randomUrl() {
+    var randomNumber = Math.floor(Math.random() * urlArray.length);
+    var newUrl = urlArray[randomNumber];
+    window.location.href = newUrl;
+}
+</script>
+
+</body>
 </html>
